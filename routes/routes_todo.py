@@ -45,11 +45,6 @@ def update(request):
 
 
 def same_user_required(route_function):
-    """
-    这个函数看起来非常绕，所以你不懂也没关系
-    就直接拿来复制粘贴就好了
-    """
-
     def f(request):
         log('same_user_required')
         u = current_user(request)
